@@ -8,14 +8,23 @@ namespace Aplicacion_de_Consola
 {
     class Alumno
     {
-        int clave;
+        String clave;
         String nombre;
         String apellidos;
-        Alumno(int clave, String nombre, String apellidos) 
+
+        public Alumno() 
+        {
+        }
+        public Alumno(String clave, String nombre, String apellidos) 
         {
             this.clave = clave;
             this.nombre = nombre;
             this.apellidos = apellidos;
+        }
+
+        public String ObtenerInformacion() 
+        {
+            return (nombre + " " + apellidos + " " + clave);
         }
     }
 }

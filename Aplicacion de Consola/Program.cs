@@ -10,7 +10,17 @@ namespace Aplicacion_de_Consola
     {
         static void Main(string[] args)
         {
-            
+            Alumno alumno = new Alumno("298360", "Abigail", "Espinoza Ibarra");
+            Alumno alumno2 = new Alumno();
+
+            Materia materia = new Materia();
+
+            materia.nombre = "Interfaces Gráficas";
+            materia.numeroDeAlumnos = 10;
+
+            Console.WriteLine(alumno.ObtenerInformacion());
+
+            Console.Read();
         }
     }
 }
